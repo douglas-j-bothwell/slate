@@ -88,7 +88,7 @@ html, body {
       padding: 6px 0 6px 20px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
-      width: $nav-width - 30;
+      width: $nav-width - ($nav-padding*2);
       outline: none;
       color: $nav-text;
       border-radius: 0; /* ios has a default border radius */
@@ -612,79 +612,4 @@ html, body {
 
 .highlight, .highlight .w {
   background-color: $code-bg;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//This is where my style for Moogsoft prototype begins:
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700');
-
-body, * {
-    font-family: 'Titillium Web', sans-serif !important;
-}
-
-h1 {
-    font-size: 35px !important;
-    font-weight: 500 !important;
-}
-
-a {
-    color: #00B2D2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.toc-wrapper, .toc-wrapper > .search input {
-    background: #000;
-}
-
-.toc-list-h2 a.toc-h2,
-.toc-list-h1 a.toc-h1 {
-    font-weight: 900;
-    font-size: 15px;
-}
-
-.toc-wrapper .logo {
-    margin: 0 auto !important;
-    width: 80%
-}
-
-.content h1,
-.content h2 {
-    margin-top: 1em;
-}
-
-img[alt="Run in Postman"] {
-    filter: hue-rotate(892deg) saturate(1) brightness(1.1) !important;
-}
-
-.content code {
-    background-color: rgba(0, 0, 0, 0.07);
-    padding: 3px;
-    border-radius: 3px;
-    color: #c7236b;
-}
-
-.content aside {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    background: lightskyblue;
-    line-height: 1.6;
 }

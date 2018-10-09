@@ -1,41 +1,41 @@
---- 
+---
 
-title: Katana API 
+title: Katana API
 
-language_tabs: 
-   - shell 
+language_tabs:
+   - shell
 
-toc_footers: 
-   - <a href='#'>Sign Up for a Developer Key</a> 
-   - <a href='https://github.com/lavkumarv'>Documentation Powered by lav</a> 
+toc_footers:
+   - <a href='#'>Sign Up for a Developer Key</a>
+   - <a href='https://github.com/lavkumarv'>Documentation Powered by lav</a>
 
-includes: 
-   - errors 
+includes:
+   - errors
 
-search: true 
+search: true
 
---- 
+---
 
-# Introduction 
+# Introduction
 
-This is a rest version of the Katana api 
+This is a rest version of the Katana api
 
-**Version:** 1.0.0 
+**Version:** 1.0.0
 
-# Authentication 
+# Authentication
 
 |apiKey|*API Key*|
-|---|---| 
+|---|---|
 
 # /DATUMS
-## ***POST*** 
+## ***POST***
 
 **Summary:** Add datum (addDatum)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /datums` 
+### HTTP Request
+`***POST*** /datums`
 
 **Parameters**
 
@@ -51,14 +51,14 @@ This is a rest version of the Katana api
 | 400 | Invalid parameters |
 | 405 | Validation exception |
 
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get the datums (getDataSeries)
 
 **Description:** Searches the database for data based on input filters
 
-### HTTP Request 
-`***GET*** /datums` 
+### HTTP Request
+`***GET*** /datums`
 
 **Parameters**
 
@@ -82,12 +82,12 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /DATUMS/METRICS
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get a list of running metrics, optionally searching with regex against input fields
 
-### HTTP Request 
-`***GET*** /datums/metrics` 
+### HTTP Request
+`***GET*** /datums/metrics`
 
 **Parameters**
 
@@ -110,12 +110,12 @@ This is a rest version of the Katana api
 | 400 | Bad input |
 | 401 | Unauthorized |
 
-## ***POST*** 
+## ***POST***
 
 **Summary:** Restarts the input metric
 
-### HTTP Request 
-`***POST*** /datums/metrics` 
+### HTTP Request
+`***POST*** /datums/metrics`
 
 **Parameters**
 
@@ -132,14 +132,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /EVENTS
-## ***POST*** 
+## ***POST***
 
 **Summary:** Send event (sendToMooms)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /events` 
+### HTTP Request
+`***POST*** /events`
 
 **Parameters**
 
@@ -155,14 +155,14 @@ This is a rest version of the Katana api
 | 400 | Invalid parameters |
 | 405 | Validation exception |
 
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get the event overview (getAnomalyOverview)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /events` 
+### HTTP Request
+`***GET*** /events`
 
 **Parameters**
 
@@ -184,14 +184,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /EVENTS/MUTE
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get's any muted period filtered on input
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /events/mute` 
+### HTTP Request
+`***GET*** /events/mute`
 
 **Parameters**
 
@@ -212,14 +212,14 @@ This is a rest version of the Katana api
 | 400 | Invalid input |
 | 401 | Unauthorized |
 
-## ***POST*** 
+## ***POST***
 
 **Summary:** Marks a period as muted (maintenance)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /events/mute` 
+### HTTP Request
+`***POST*** /events/mute`
 
 **Parameters**
 
@@ -236,14 +236,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /EVENTS/SUMMARY
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get the event summaries
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /events/summary` 
+### HTTP Request
+`***GET*** /events/summary`
 
 **Parameters**
 
@@ -263,14 +263,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /DATUMS/GRANULARITIES
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get the granularities (getGranularities)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /datums/granularities` 
+### HTTP Request
+`***GET*** /datums/granularities`
 
 **Parameters**
 
@@ -290,14 +290,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /MARS
-## ***GET*** 
+## ***GET***
 
-**Summary:** 
+**Summary:**
 
 **Description:** Finds the available mars present in the directory.
 
-### HTTP Request 
-`***GET*** /mars` 
+### HTTP Request
+`***GET*** /mars`
 
 **Responses**
 
@@ -309,14 +309,14 @@ This is a rest version of the Katana api
 | 500 | Server error during status update |
 
 # /LICENSE/SERVER
-## ***GET*** 
+## ***GET***
 
-**Summary:** 
+**Summary:**
 
 **Description:** Returns the server-side license report in json format
 
-### HTTP Request 
-`***GET*** /license/server` 
+### HTTP Request
+`***GET*** /license/server`
 
 **Responses**
 
@@ -326,14 +326,14 @@ This is a rest version of the Katana api
 | 500 | File IO error |
 
 # /LICENSE/UI
-## ***GET*** 
+## ***GET***
 
-**Summary:** 
+**Summary:**
 
 **Description:** Returns the ui license report in json format
 
-### HTTP Request 
-`***GET*** /license/ui` 
+### HTTP Request
+`***GET*** /license/ui`
 
 **Responses**
 
@@ -343,14 +343,14 @@ This is a rest version of the Katana api
 | 500 | File IO error |
 
 # /STATUS
-## ***GET*** 
+## ***GET***
 
-**Summary:** 
+**Summary:**
 
 **Description:** Returns the health status of the webserver
 
-### HTTP Request 
-`***GET*** /status` 
+### HTTP Request
+`***GET*** /status`
 
 **Responses**
 
@@ -359,14 +359,14 @@ This is a rest version of the Katana api
 | 200 | Success |
 
 # /MARS/MOOBS
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get the available moobs (findAllMoobs, getMoobs)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /mars/moobs` 
+### HTTP Request
+`***GET*** /mars/moobs`
 
 **Parameters**
 
@@ -383,14 +383,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /MODELS
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get a model (loadModel) or model summary (availableModels) if no parameters supplied
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /models` 
+### HTTP Request
+`***GET*** /models`
 
 **Parameters**
 
@@ -406,14 +406,14 @@ This is a rest version of the Katana api
 | 400 | Invalid input |
 | 401 | Unauthorized |
 
-## ***POST*** 
+## ***POST***
 
 **Summary:** Saves a model to the database
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /models` 
+### HTTP Request
+`***POST*** /models`
 
 **Parameters**
 
@@ -430,14 +430,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /TEMP/MODELS
-## ***POST*** 
+## ***POST***
 
 **Summary:** Marks a period as muted (maintenance)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /temp/models` 
+### HTTP Request
+`***POST*** /temp/models`
 
 **Parameters**
 
@@ -455,14 +455,14 @@ This is a rest version of the Katana api
 | 405 | Validation exception |
 
 # /TEMP/MODELS/{MODEL_NAME}
-## ***GET*** 
+## ***GET***
 
 **Summary:** Sends back a model marked as completed or incomplete
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /temp/models/{model_name}` 
+### HTTP Request
+`***GET*** /temp/models/{model_name}`
 
 **Parameters**
 
@@ -478,14 +478,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /EVENTS/HEAT
-## ***GET*** 
+## ***GET***
 
 **Summary:** Calculate the anomaly heat based on input filters
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /events/heat` 
+### HTTP Request
+`***GET*** /events/heat`
 
 **Parameters**
 
@@ -503,14 +503,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 
 # /MARS/ASSETS
-## ***GET*** 
+## ***GET***
 
 **Summary:** Load a MAR asset (loadAsset)
 
 **Description:** Returns a MAR asset
 
-### HTTP Request 
-`***GET*** /mars/assets` 
+### HTTP Request
+`***GET*** /mars/assets`
 
 **Parameters**
 
@@ -528,12 +528,12 @@ This is a rest version of the Katana api
 | 200 | successful operation |
 | 400 | Invalid ID supplied |
 
-## ***POST*** 
+## ***POST***
 
 **Summary:** Handles a POST that marks that something in a mar has changed.
 
-### HTTP Request 
-`***POST*** /mars/assets` 
+### HTTP Request
+`***POST*** /mars/assets`
 
 **Parameters**
 
@@ -551,14 +551,14 @@ This is a rest version of the Katana api
 | 405 | Validation exception |
 
 # /COLLECTORS/{UUID}/MOOBS
-## ***POST*** 
+## ***POST***
 
 **Summary:** Update MOOB status (updateMoob)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /collectors/{uuid}/moobs` 
+### HTTP Request
+`***POST*** /collectors/{uuid}/moobs`
 
 **Parameters**
 
@@ -577,14 +577,14 @@ This is a rest version of the Katana api
 | 500 | Server error during status update |
 
 # /COLLECTORS
-## ***GET*** 
+## ***GET***
 
-**Summary:** 
+**Summary:**
 
 **Description:** If a query param is provided, it searches for a collector with the specified name. If not, it provides info on each collector.
 
-### HTTP Request 
-`***GET*** /collectors` 
+### HTTP Request
+`***GET*** /collectors`
 
 **Parameters**
 
@@ -604,14 +604,14 @@ This is a rest version of the Katana api
 | 500 | Server error during status update |
 
 # /COLLECTORS/{UUID}/METRICS
-## ***GET*** 
+## ***GET***
 
 **Summary:** Load metric config
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***GET*** /collectors/{uuid}/metrics` 
+### HTTP Request
+`***GET*** /collectors/{uuid}/metrics`
 
 **Parameters**
 
@@ -630,14 +630,14 @@ This is a rest version of the Katana api
 | 405 | Validation exception |
 | 500 | Server error during status update |
 
-## ***POST*** 
+## ***POST***
 
 **Summary:** Updated metric config, or restart a metric in the config.
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /collectors/{uuid}/metrics` 
+### HTTP Request
+`***POST*** /collectors/{uuid}/metrics`
 
 **Parameters**
 
@@ -656,14 +656,14 @@ This is a rest version of the Katana api
 | 500 | Server error during status update |
 
 # /COLLECTORS/{UUID}/CONFIG
-## ***POST*** 
+## ***POST***
 
 **Summary:** Changes the log level to the caller's desired level
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /collectors/{uuid}/config` 
+### HTTP Request
+`***POST*** /collectors/{uuid}/config`
 
 **Parameters**
 
@@ -682,14 +682,14 @@ This is a rest version of the Katana api
 | 500 | Server error during status update |
 
 # /FEEDBACK
-## ***POST*** 
+## ***POST***
 
 **Summary:** Add feedback (feedback)
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /feedback` 
+### HTTP Request
+`***POST*** /feedback`
 
 **Parameters**
 
@@ -706,12 +706,12 @@ This is a rest version of the Katana api
 | 405 | Validation exception |
 
 # /SLACK
-## ***POST*** 
+## ***POST***
 
 **Summary:** Suppress the slackbot for a period of time
 
-### HTTP Request 
-`***POST*** /slack` 
+### HTTP Request
+`***POST*** /slack`
 
 **Parameters**
 
@@ -729,14 +729,14 @@ This is a rest version of the Katana api
 | 405 | Validation exception |
 
 # /SITUATIONS/{SITN_ID}
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get AIOps situation events (getSituationEvents)
 
 **Description:** Get AIOps situation events
 
-### HTTP Request 
-`***GET*** /situations/{sitn_id}` 
+### HTTP Request
+`***GET*** /situations/{sitn_id}`
 
 **Parameters**
 
@@ -754,14 +754,14 @@ This is a rest version of the Katana api
 | 400 | Invalid or no ID supplied |
 
 # /COLLECTORS/TAR
-## ***GET*** 
+## ***GET***
 
 **Summary:** Returns a bash command to download the collector (collectorDownload)
 
 **Description:** Returns a bash command to download the collector
 
-### HTTP Request 
-`***GET*** /collectors/tar` 
+### HTTP Request
+`***GET*** /collectors/tar`
 
 **Parameters**
 
@@ -780,12 +780,12 @@ This is a rest version of the Katana api
 | 405 | Validation exception |
 
 # /CONFIG
-## ***GET*** 
+## ***GET***
 
 **Summary:** Get config from ZooKeeper
 
-### HTTP Request 
-`***GET*** /config` 
+### HTTP Request
+`***GET*** /config`
 
 **Parameters**
 
@@ -802,12 +802,12 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 | 500 | Server error |
 
-## ***POST*** 
+## ***POST***
 
 **Summary:** Set config in ZooKeeper
 
-### HTTP Request 
-`***POST*** /config` 
+### HTTP Request
+`***POST*** /config`
 
 **Parameters**
 
@@ -825,12 +825,12 @@ This is a rest version of the Katana api
 | 500 | Server error |
 
 # /SESSIONS
-## ***POST*** 
+## ***POST***
 
 **Summary:** Handles a POST for a web login request
 
-### HTTP Request 
-`***POST*** /sessions` 
+### HTTP Request
+`***POST*** /sessions`
 
 **Parameters**
 
@@ -848,12 +848,12 @@ This is a rest version of the Katana api
 | 405 | Validation exception |
 
 # /USERS/CURRENT
-## ***GET*** 
+## ***GET***
 
 **Summary:** Handles a GET for user info
 
-### HTTP Request 
-`***GET*** /users/current` 
+### HTTP Request
+`***GET*** /users/current`
 
 **Responses**
 
@@ -865,12 +865,12 @@ This is a rest version of the Katana api
 | 500 | Server error |
 
 # /PROPERTIES/CURRENT
-## ***GET*** 
+## ***GET***
 
 **Summary:** Handles a GET for the current user's properties
 
-### HTTP Request 
-`***GET*** /properties/current` 
+### HTTP Request
+`***GET*** /properties/current`
 
 **Responses**
 
@@ -881,14 +881,14 @@ This is a rest version of the Katana api
 | 401 | Unauthorized |
 | 500 | Server error |
 
-## ***POST*** 
+## ***POST***
 
 **Summary:** Set the current user's properties
 
-**Description:** 
+**Description:**
 
-### HTTP Request 
-`***POST*** /properties/current` 
+### HTTP Request
+`***POST*** /properties/current`
 
 **Parameters**
 
@@ -905,12 +905,12 @@ This is a rest version of the Katana api
 | 500 | Server error |
 
 # /SESSIONS/SAML/DETAILS
-## ***GET*** 
+## ***GET***
 
 **Description:** Checks if SAML SSO is enabled for this instance
 
-### HTTP Request 
-`***GET*** /sessions/saml/details` 
+### HTTP Request
+`***GET*** /sessions/saml/details`
 
 **Responses**
 
@@ -919,12 +919,12 @@ This is a rest version of the Katana api
 | 200 | Success |
 
 # /SESSIONS/SAML/REQUEST
-## ***GET*** 
+## ***GET***
 
 **Description:** Prepares a SAML AuthnRequest
 
-### HTTP Request 
-`***GET*** /sessions/saml/request` 
+### HTTP Request
+`***GET*** /sessions/saml/request`
 
 **Responses**
 
@@ -935,10 +935,10 @@ This is a rest version of the Katana api
 | 500 | Server error either building the AuthnRequest or reading files |
 
 # /SESSIONS/SAML/RESPONSE
-## ***POST*** 
+## ***POST***
 
-### HTTP Request 
-`***POST*** /sessions/saml/response` 
+### HTTP Request
+`***POST*** /sessions/saml/response`
 
 **Parameters**
 
